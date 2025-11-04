@@ -24,13 +24,13 @@ public class DamageTypeExample : MonoBehaviour
         {
             baseDamage = baseDamage / 2;
             Debug.Log("The enemy is resistant to " + playerAttackType);
-            Debug.Log("Base Damage: " + baseDamage);
+            Debug.Log("Base Damage halved");
         }
         else if (playerAttackType == enemyWeakness)
         {
             baseDamage = baseDamage * 2;
             Debug.Log("The enemy is weak to " + playerAttackType);
-            Debug.Log("Base Damage: " + baseDamage);
+            Debug.Log("Base Damage is doubled");
         }
         Debug.Log("The final damage is " + baseDamage);
     }
