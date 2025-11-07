@@ -54,8 +54,8 @@ public class LetsPlayWithArrays : MonoBehaviour
 
     void PutToTheBack(int[] array, int index)
     {
-        int cont=array[value];
-        for (int i = value; i < array.Length; i++)
+        int cont=array[index];
+        for (int i = index; i < array.Length; i++)
         {
             if(i == (array.Length - 1)) 
             {
@@ -89,24 +89,9 @@ public class LetsPlayWithArrays : MonoBehaviour
 
     void ShiftTimes(int[] array, int times) 
     {
-        int cont1;
-        int cont2;
         for (int i = 0; i <= times; i++) 
         {
-            cont1 = array[0];
-            for (int j = 0; j < array.Length; j++)
-            {
-                if (j == (array.Length - 1))
-                {
-                    array[0] = cont1;
-                }
-                else
-                {
-                    cont2 = array[j + 1];
-                    array[j + 1] = cont1;
-                    cont1 = cont2;
-                }
-            }
+            ShiftOnce(array);
         }
     }
 

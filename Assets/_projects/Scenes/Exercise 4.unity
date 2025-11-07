@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   array: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000
-  value: 3
+  value: 6
 --- !u!65 &1530456710
 BoxCollider:
   m_ObjectHideFlags: 0
